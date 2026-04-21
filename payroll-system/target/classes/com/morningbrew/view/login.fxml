@@ -11,36 +11,36 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="645.0" styleClass="main-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morningbrew.Controller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" styleClass="main-background" stylesheets="@global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morningbrew.Controller.LoginController">
    <children>
-      <FontIcon iconColor="#351e15" iconLiteral="mdi2e-email" iconSize="30" layoutX="176.0" layoutY="149.0" text="󰇮" />
-      <PasswordField id="passwordField" layoutX="163.0" layoutY="253.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@styles.css">
+      <FontIcon iconColor="#351e15" iconLiteral="mdi2e-email" iconSize="30" layoutX="228.0" layoutY="191.0" text="󰇮" />
+      <PasswordField id="passwordField" layoutX="215.0" layoutY="302.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
          <font>
             <Font name="Simply Olive Regular" size="8.0" />
          </font>
       </PasswordField>
-      <TextField id="emailField" layoutX="163.0" layoutY="156.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@styles.css">
+      <TextField id="emailField" layoutX="215.0" layoutY="198.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
          <font>
             <Font name="Simply Olive Regular" size="24.0" />
          </font>
       </TextField>
-      <FontIcon iconColor="#351e15" iconLiteral="mdi2l-lock" iconSize="30" layoutX="176.0" layoutY="249.0" text="󰌾" />
-      <ImageView fitHeight="132.0" fitWidth="133.0" layoutX="225.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <FontIcon iconColor="#351e15" iconLiteral="mdi2l-lock" iconSize="30" layoutX="228.0" layoutY="298.0" text="󰌾" />
+      <ImageView fitHeight="145.0" fitWidth="159.0" layoutX="273.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/morningbrew-transparent-logo.png" />
          </image>
       </ImageView>
-      <Button fx:id="loginButton" layoutX="141.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="61.0" prefWidth="320.0" styleClass="login-button" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
+      <Button fx:id="loginButton" layoutX="193.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleSwitchScene" prefHeight="76.0" prefWidth="320.0" styleClass="login-button" stylesheets="@login.css" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
          <font>
             <Font name="Simply Olive Regular" size="36.0" />
          </font>
       </Button>
-      <Label layoutX="206.0" layoutY="224.0" text="Password" textFill="#351e15">
+      <Label layoutX="258.0" layoutY="273.0" text="Password" textFill="#351e15">
          <font>
             <Font name="Simply Olive Regular" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="206.0" layoutY="124.0" text="Email" textFill="#351e15">
+      <Label layoutX="258.0" layoutY="166.0" text="Username" textFill="#351e15">
          <font>
             <Font name="Simply Olive Regular" size="28.0" />
          </font>

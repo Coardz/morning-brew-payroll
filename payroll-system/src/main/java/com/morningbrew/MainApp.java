@@ -16,7 +16,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws IOException {
         primaryStage = stage;
         
-        scene = new Scene(loadFXML("login"), 645, 446);
+        scene = new Scene(loadFXML("login"), 750, 560);
         
         stage.setTitle("Morning Brew | Payroll System");
         
@@ -24,9 +24,25 @@ public class MainApp extends Application {
         stage.show();
     }
 
+    public static void applyStyles(String fxml) {
+        scene.getStylesheets().clear();
+
+        scene.getStylesheets().add(MainApp.class.getResource("style/global.css").toExternalForm());
+
+        String specificStyle = "style/" + fxml + ".css";
+
+        if (MainApp.class.getResource(specificStyle) != null) {
+            scene.getStylesheets().add(MainApp.class.getResource(specificStyle).toExternalForm());
+        }
+    }
+
 
     public static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
+        Parent root = loadFXML(fxml);
+        scene.setRoot(root);
+        
+        applyStyles(fxml);
+
         primaryStage.sizeToScene();
         primaryStage.centerOnScreen();
     }
