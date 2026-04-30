@@ -1,11 +1,12 @@
 package com.morningbrew;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
 
 public class MainApp extends Application {
 
@@ -20,6 +21,7 @@ public class MainApp extends Application {
         
         stage.setTitle("Morning Brew | Payroll System");
         
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
@@ -60,6 +62,7 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
+       // createNewUser("bisakols", "saging", "Administrator");
         launch();
     }
 }
