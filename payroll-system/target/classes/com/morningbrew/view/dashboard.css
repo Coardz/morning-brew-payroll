@@ -1,3 +1,11 @@
+
+
+.button {
+    -fx-background-color: #351e15;
+	-fx-background-radius: 8px;
+}
+
+
 .side-bar {
     -fx-background-color: #b4a48b;
     
