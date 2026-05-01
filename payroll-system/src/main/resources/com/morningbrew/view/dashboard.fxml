@@ -43,14 +43,22 @@
       </DialogPane>
       <Pane prefHeight="560.0" prefWidth="191.0" styleClass="side-bar" stylesheets="@dashboard.css">
          <children>
-            <Circle fill="#f7f7f7" layoutX="44.0" layoutY="46.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
-            <FontIcon iconColor="#333333" iconLiteral="mdi2a-account" iconSize="32" layoutX="28.0" layoutY="58.0" text="󰀄" />
-            <Label layoutX="75.0" layoutY="33.0" text="Username" textFill="WHITE">
+            <Circle fill="#f7f7f7" layoutX="44.0" layoutY="212.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+            <FontIcon iconColor="#333333" iconLiteral="mdi2a-account" iconSize="32" layoutX="28.0" layoutY="224.0" text="󰀄" />
+            <Label layoutX="79.0" layoutY="198.0" text="Username" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button layoutX="49.0" layoutY="136.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="10.0" layoutY="280.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
+            <ImageView fitHeight="180.0" fitWidth="200.0" layoutX="-4.0">
+               <image>
+                  <Image url="@../images/morningbrew-transparent-logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Hirebutton" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Resume / Hiring" textFill="WHITE" />
+            <Button fx:id="attendancebutton" layoutX="10.0" layoutY="378.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Attendance" textFill="WHITE" />
+            <Button layoutX="10.0" layoutY="429.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
          </children>
       </Pane>
    </children>
