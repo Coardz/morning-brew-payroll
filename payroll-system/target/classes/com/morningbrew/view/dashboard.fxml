@@ -50,12 +50,15 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button layoutX="10.0" layoutY="267.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
+            <Button fx:id="payslipbutton" layoutX="10.0" layoutY="280.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
             <ImageView fitHeight="180.0" fitWidth="200.0" layoutX="-4.0">
                <image>
                   <Image url="@../images/morningbrew-transparent-logo.png" />
                </image>
             </ImageView>
+            <Button fx:id="Hirebutton" layoutX="10.0" layoutY="430.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Resume / Hiring" textFill="WHITE" />
+            <Button fx:id="attendancebutton" layoutX="10.0" layoutY="326.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Attendance" textFill="WHITE" />
+            <Button layoutX="10.0" layoutY="379.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
          </children>
       </Pane>
    </children>
