@@ -9,7 +9,7 @@ public class Database {
     public static void createNewUser(String user, String pass, String role) {
         String sql = "INSERT INTO users(username, password, role) VALUES(?,?,?)";
         
-        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:morningbrew.db");
+        try (Connection conn = DriverManager.getConnection("jdbc:sqlite:morning-brew.db");
          PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, user);
             pstmt.setString(2, pass);

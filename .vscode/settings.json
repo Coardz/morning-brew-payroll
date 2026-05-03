@@ -1,3 +1,4 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "vmArgs": "--module-path ${settings:java.project.referencedLibraries} --add-modules javafx.controls,javafx.fxml"
 }

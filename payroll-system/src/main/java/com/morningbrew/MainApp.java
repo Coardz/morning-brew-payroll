@@ -1,7 +1,6 @@
 package com.morningbrew;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -52,7 +51,7 @@ public class MainApp extends Application {
     private static Parent loadFXML(String fxml) throws IOException {
         String path = "view/" + fxml + ".fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource(path));
-        
+            
         Parent root = fxmlLoader.load();
         
         if (root == null) {
@@ -62,7 +61,9 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
-       // createNewUser("bisakols", "saging", "Administrator");
+        // Already Added That Account
+        // Database.createNewUser("bisakols", "saging", "Administrator");
+        
         launch();
     }
 }
