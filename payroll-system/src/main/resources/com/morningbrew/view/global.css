@@ -5,7 +5,7 @@
 .button:hover {
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
-    -fx-background-color: #3498db;
+    -fx-background-color: #e1c383;
     -fx-cursor: hand;
 }
 
