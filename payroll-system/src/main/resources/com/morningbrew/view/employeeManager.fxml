@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="810.0" styleClass="main-background" stylesheets="@employeeManager.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morningbrew.Controller.EmployeeManagerController">
+   <children>
+      <Pane prefHeight="560.0" prefWidth="52.0" styleClass="side-bar" stylesheets="@employeeManager.css">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="-6.0" layoutY="394.0" prefHeight="161.0" prefWidth="64.0" spacing="2.0">
+               <children>
+                  <Button fx:id="btnHome" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="41.0" prefWidth="46.0" styleClass="transparent-button" stylesheets="@employeeManager.css" textFill="TRANSPARENT">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi2h-home" iconSize="42" text="󰋜" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="44.0" prefWidth="0.0" styleClass="transparent-button" stylesheets="@employeeManager.css" textFill="TRANSPARENT">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi2t-table-account" iconSize="42" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="12.0" layoutY="55.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="46.0" styleClass="transparent-button" stylesheets="@employeeManager.css" textFill="TRANSPARENT">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi2c-chart-bar" iconSize="42" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <TableView fx:id="employeeTable" layoutX="52.0" layoutY="298.0" pickOnBounds="false" prefHeight="262.0" prefWidth="759.0" stylesheets="@employeeManager.css">
+        <columns>
+            <TableColumn id="idColumn" fx:id="idColumn" prefWidth="48.666664123535156" text="ID" />
+          <TableColumn id="firstNameColumn" fx:id="firstNameColumn" prefWidth="118.0" text="First Name" />
+          <TableColumn id="lastNameColumn" fx:id="lastNameColumn" prefWidth="117.0" text="Last Name" />
+            <TableColumn id="departmentColumn" fx:id="departmentColumn" prefWidth="134.0" text="Department" />
+            <TableColumn id="positionColumn" fx:id="positionColumn" prefWidth="116.0" text="Position" />
+            <TableColumn id="rateColumn" fx:id="rateColumn" minWidth="0.0" prefWidth="107.0" text="Rate" />
+            <TableColumn id="positionColumn" fx:id="workingDaysColumn" prefWidth="104.0" text="NO Days" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="52.0" prefHeight="297.0" prefWidth="759.0">
+         <children>
+            <StackPane prefHeight="297.0" prefWidth="759.0">
+               <children>
+                  <GridPane hgap="20.0" prefHeight="295.0" prefWidth="759.0" stylesheets="@employeeManager.css" vgap="10.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Group GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Group>
+                        <Label text="Employee">
+                           <font>
+                              <Font name="Segoe UI Bold" size="29.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Group layoutX="2.0" layoutY="89.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Group layoutX="245.0" layoutY="89.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Group layoutX="-8.0" layoutY="89.0" GridPane.rowIndex="2" />
+                        <Group layoutX="-8.0" layoutY="158.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Group layoutX="245.0" layoutY="158.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleAddEmployee" prefHeight="49.0" prefWidth="235.0" text="Add" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnRemove" mnemonicParsing="false" onAction="#handleRemoveEmployee" prefHeight="49.0" prefWidth="235.0" text="Remove" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#handleEditEmployee" prefHeight="49.0" prefWidth="235.0">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="mdi2a-account-edit" iconSize="32" text="󰚼" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btnSave" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleUpdateSave" prefHeight="49.0" prefWidth="235.0">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="mdi2c-content-save" iconSize="32" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btnClear" layoutX="126.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClearFields" prefHeight="49.0" prefWidth="235.0">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontIcon iconColor="WHITE" iconLiteral="mdi2f-format-clear" iconSize="32" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Last Name">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lastNameField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox GridPane.rowIndex="1">
+                           <children>
+                              <Label text="First Name">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstNameField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="20.0" layoutY="92.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Position">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="positionField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="273.0" layoutY="20.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Department">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="deptField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="526.0" layoutY="92.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Daily Rate">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="rateField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="273.0" layoutY="164.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="NO Days">
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="daysField" prefHeight="45.0" prefWidth="233.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

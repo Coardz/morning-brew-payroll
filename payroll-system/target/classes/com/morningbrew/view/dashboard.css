@@ -1,10 +1,22 @@
-
-
-.button {
-    -fx-background-color: #351e15;
-	-fx-background-radius: 8px;
+.main-background {
+    -fx-background-color: #ecdbc1;
 }
 
+.side-bar {
+    -fx-background-color: #b4a48b;
+}
+
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 5px;
+}
+
+.card {
+    -fx-background-radius: 12px;
+    -fx-background-color: #857062
+}
 
 .side-bar {
     -fx-background-color: #b4a48b;
