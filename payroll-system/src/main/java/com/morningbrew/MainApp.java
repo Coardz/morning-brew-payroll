@@ -1,11 +1,13 @@
 package com.morningbrew;
 
 import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainApp extends Application {
 
@@ -18,8 +20,8 @@ public class MainApp extends Application {
         
         scene = new Scene(loadFXML("login"), 750, 560);
         
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Morning Brew | Payroll System");
-        
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -44,6 +46,7 @@ public class MainApp extends Application {
         
         applyStyles(fxml);
 
+        
         primaryStage.sizeToScene();
         primaryStage.centerOnScreen();
     }
