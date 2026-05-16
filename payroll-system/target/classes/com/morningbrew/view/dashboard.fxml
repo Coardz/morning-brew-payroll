@@ -45,6 +45,11 @@
                   </Button>
                </children>
             </VBox>
+            <Button fx:id="tologin" layoutY="341.0" mnemonicParsing="false" styleClass="transparent-button">
+               <graphic>
+                  <FontIcon iconColor="#f4f2f2" iconLiteral="mdi2c-coffee-to-go" iconSize="42" />
+               </graphic>
+            </Button>
          </children>
       </Pane>
       <StackPane layoutX="52.0" layoutY="-6.0" prefHeight="572.0" prefWidth="756.0">

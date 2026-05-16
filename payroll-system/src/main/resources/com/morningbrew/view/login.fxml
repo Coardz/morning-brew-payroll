@@ -30,7 +30,7 @@
             <Image url="@../images/morningbrew-transparent-logo.png" />
          </image>
       </ImageView>
-      <Button fx:id="loginButton" layoutX="292.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="54.0" prefWidth="174.0" styleClass="login-button" stylesheets="@login.css" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
+      <Button fx:id="loginButton" layoutX="292.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="54.0" prefWidth="174.0" styleClass="login-button" stylesheets="@login.css" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
          <font>
             <Font name="Segoe UI Black" size="29.0" />
          </font>
@@ -56,9 +56,9 @@
             <Font name="Segoe UI Bold" size="23.0" />
          </font>
       </Label>
-      <Button layoutX="664.0" layoutY="498.0" mnemonicParsing="false">
+      <Button layoutX="666.0" layoutY="488.0" mnemonicParsing="false" styleClass="exit-button" stylesheets="@login.css">
          <graphic>
-            <FontIcon id="exit-button" fx:id="exit" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="button" />
+            <FontIcon id="exit-button" fx:id="exit" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="exit-button" />
          </graphic></Button>
    </children>
 </AnchorPane>
