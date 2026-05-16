@@ -56,9 +56,9 @@
             <Font name="Segoe UI Bold" size="23.0" />
          </font>
       </Label>
-      <Button layoutX="666.0" layoutY="488.0" mnemonicParsing="false" styleClass="exit-button" stylesheets="@login.css">
+      <Button fx:id="exit" layoutX="664.0" layoutY="484.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="67.0" styleClass="exit-button" stylesheets="@login.css">
          <graphic>
-            <FontIcon id="exit-button" fx:id="exit" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="exit-button" />
+            <FontIcon id="exit-button" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="exit-button" />
          </graphic></Button>
    </children>
 </AnchorPane>

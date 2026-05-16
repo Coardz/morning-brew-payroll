@@ -1,6 +1,7 @@
 package com.morningbrew.Controller;
 
 import com.morningbrew.Utils.SceneHelper;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -16,5 +17,9 @@ public class DashboardController {
     @FXML
     private void switchToDashboard() {
         SceneHelper.switchScene("dashboard");
+    }
+    @FXML
+    private void switchToPayroll() {
+        SceneHelper.switchScene("login");
     }
 }
