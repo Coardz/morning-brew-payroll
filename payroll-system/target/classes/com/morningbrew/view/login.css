@@ -6,3 +6,7 @@
 	-fx-background-color: #351e15;
 	-fx-background-radius: 8px;
 }
+.exit-button {
+	-fx-background-color: transparent;
+
+}

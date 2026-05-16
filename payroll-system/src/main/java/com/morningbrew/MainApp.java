@@ -1,9 +1,12 @@
 package com.morningbrew;
 
 import java.io.IOException;
+
 import com.morningbrew.Utils.SceneHelper;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainApp extends Application {
 
@@ -11,6 +14,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws IOException {
         SceneHelper.setStage(stage);
         stage.setTitle("Morning Brew");
+        stage.initStyle(StageStyle.UNDECORATED);
         SceneHelper.switchScene("login"); // XXX CHANGE THE STARTING UI HERE WHEN DEBUGGING/TESTING
         stage.show();
     }

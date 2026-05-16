@@ -1,10 +1,11 @@
 package com.morningbrew.Utils;
 
+import java.io.IOException;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
 
 public class SceneHelper {
 
@@ -28,7 +29,7 @@ public class SceneHelper {
             Parent root = loader.load();
 
             if (primaryStage.getScene() == null) {
-                primaryStage.setScene(new Scene(root, 810, 560));
+                primaryStage.setScene(new Scene(root, 760, 560));
             } else {
                 primaryStage.getScene().setRoot(root);
             }
