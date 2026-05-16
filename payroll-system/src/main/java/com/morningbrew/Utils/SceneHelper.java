@@ -29,7 +29,7 @@ public class SceneHelper {
             Parent root = loader.load();
 
             if (primaryStage.getScene() == null) {
-                primaryStage.setScene(new Scene(root, 760, 560));
+                primaryStage.setScene(new Scene(root, 808, 560));
             } else {
                 primaryStage.getScene().setRoot(root);
             }

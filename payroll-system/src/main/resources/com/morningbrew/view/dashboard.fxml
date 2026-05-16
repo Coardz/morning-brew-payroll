@@ -17,7 +17,7 @@
    <children>
       <Pane prefHeight="560.0" prefWidth="52.0" styleClass="side-bar" stylesheets="@dashboard.css">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="-6.0" layoutY="394.0" prefHeight="115.0" prefWidth="64.0" spacing="2.0">
+            <VBox alignment="TOP_CENTER" layoutX="-6.0" layoutY="324.0" prefHeight="115.0" prefWidth="64.0" spacing="2.0">
                <children>
                   <Button fx:id="btnHome" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="41.0" prefWidth="46.0" styleClass="transparent-button" stylesheets="@dashboard.css" textFill="TRANSPARENT">
                      <font>
@@ -43,13 +43,13 @@
                         <FontIcon iconColor="WHITE" iconLiteral="mdi2c-chart-bar" iconSize="42" />
                      </graphic>
                   </Button>
+                  <Button fx:id="tologin" mnemonicParsing="false" onAction="#switchToPayroll" styleClass="transparent-button">
+                     <graphic>
+                        <FontIcon iconColor="#f4f2f2" iconLiteral="mdi2c-coffee-to-go" iconSize="42" />
+                     </graphic>
+                  </Button>
                </children>
             </VBox>
-            <Button fx:id="tologin" layoutY="341.0" mnemonicParsing="false" onAction="#switchToPayroll" styleClass="transparent-button">
-               <graphic>
-                  <FontIcon iconColor="#f4f2f2" iconLiteral="mdi2c-coffee-to-go" iconSize="42" />
-               </graphic>
-            </Button>
          </children>
       </Pane>
       <StackPane layoutX="52.0" layoutY="-6.0" prefHeight="572.0" prefWidth="756.0">

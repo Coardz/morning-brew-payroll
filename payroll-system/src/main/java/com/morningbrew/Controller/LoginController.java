@@ -3,6 +3,7 @@ package com.morningbrew.Controller;
 import com.morningbrew.Utils.AlertHelper;
 import com.morningbrew.Utils.Database;
 import com.morningbrew.Utils.SceneHelper;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
@@ -34,5 +35,9 @@ public class LoginController {
     @FXML
     private void switchToDashboard() {
         SceneHelper.switchScene("dashboard");
+    }
+    @FXML
+    private void closeApp() {
+        System.exit(0);
     }
 }
