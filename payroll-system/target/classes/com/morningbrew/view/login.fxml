@@ -68,9 +68,9 @@
                   <Font name="Segoe UI Black Italic" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="showpass" layoutX="406.0" layoutY="277.0" mnemonicParsing="false">
+            <Button fx:id="showpass" layoutX="424.0" layoutY="277.0" mnemonicParsing="false" styleClass="showpass-button" stylesheets="@login.css">
                <graphic>
-                  <FontIcon iconLiteral="mdi2e-eye-off" />
+                  <FontIcon iconLiteral="mdi2e-eye-off" iconSize="18" />
                </graphic>
             </Button>
          </children>
