@@ -1,12 +1,38 @@
 .standard-field {
 	-fx-background-radius: 16px;
+	-fx-effect: dropshadow( gaussian, rgba(30, 25, 13, 0.859), 0px, 0, 5, 5px );
 }
 
 .login-button {
 	-fx-background-color: #351e15;
 	-fx-background-radius: 8px;
+	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.503), 0px, 0, 5, 5px );
 }
 .exit-button {
 	-fx-background-color: transparent;
+	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.503), 0px, 0, 2, 2px );
 
 }
+#border {
+	-fx-border-color: #000000;
+	-fx-border-width: 4px;
+	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.503), 0px, 0, 7, 7px );
+	-fx-effect-radius: 4px;
+	
+
+	-fx-background-color: rgb(252, 252, 252);
+	-fx-border-radius: 5px;
+	-fx-background-radius: 7;
+	
+	
+}
+.showpass-button {
+	-fx-background-color: transparent;
+	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.503), 0px, 0, 2, 2px );
+}
+
+
+
+
+
+

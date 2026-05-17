@@ -13,33 +13,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="808.0" styleClass="main-background" stylesheets="@global.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morningbrew.Controller.LoginController">
    <children>
-      <FontIcon iconColor="#351e15" iconLiteral="mdi2e-email" iconSize="30" layoutX="284.0" layoutY="240.0" text="󰇮" />
-      <PasswordField id="passwordField" fx:id="passwordField" layoutX="266.0" layoutY="350.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
-         <font>
-            <Font name="Segoe UI" size="8.0" />
-         </font>
-      </PasswordField>
-      <TextField id="emailField" fx:id="usernameField" layoutX="266.0" layoutY="243.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
-         <font>
-            <Font name="Segoe UI" size="24.0" />
-         </font>
-      </TextField>
-      <FontIcon iconColor="#351e15" iconLiteral="mdi2l-lock" iconSize="30" layoutX="284.0" layoutY="345.0" text="󰌾" />
-      <ImageView fitHeight="230.0" fitWidth="258.0" layoutX="276.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/morningbrew-transparent-logo.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="loginButton" layoutX="321.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="41.0" prefWidth="165.0" styleClass="login-button" stylesheets="@login.css" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
-         <font>
-            <Font name="Segoe UI Black" size="29.0" />
-         </font>
-      </Button>
-      <Label layoutX="326.0" layoutY="320.0" text="Password" textFill="#351e15">
-         <font>
-            <Font name="Segoe UI Bold" size="23.0" />
-         </font>
-      </Label>
       <DialogPane layoutX="113.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="377.0" visible="false">
           <header>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
@@ -51,14 +24,56 @@
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
           </expandableContent>
       </DialogPane>
-      <Label layoutX="323.0" layoutY="215.0" text="Username" textFill="#351e15">
-         <font>
-            <Font name="Segoe UI Bold" size="23.0" />
-         </font>
-      </Label>
-      <Button fx:id="exit" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="61.0" prefWidth="67.0" styleClass="exit-button" stylesheets="@login.css">
-         <graphic>
-            <FontIcon id="exit-button" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="exit-button" />
-         </graphic></Button>
+      <AnchorPane fx:id="border" layoutX="86.0" layoutY="56.0" prefHeight="447.0" prefWidth="635.0" stylesheets="@login.css">
+         <children>
+            <FontIcon iconColor="#351e15" iconLiteral="mdi2e-email" iconSize="30" layoutX="195.0" layoutY="168.0" text="󰇮" />
+            <PasswordField id="passwordField" fx:id="passwordField" layoutX="187.0" layoutY="265.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
+               <font>
+                  <Font name="Segoe UI" size="8.0" />
+               </font>
+            </PasswordField>
+            <TextField id="emailField" fx:id="usernameField" layoutX="187.0" layoutY="171.0" prefHeight="48.0" prefWidth="275.0" styleClass="standard-field" stylesheets="@login.css">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </TextField>
+            <FontIcon iconColor="#351e15" iconLiteral="mdi2l-lock" iconSize="30" layoutX="195.0" layoutY="258.0" text="󰌾" />
+            <ImageView fitHeight="193.0" fitWidth="234.0" layoutX="218.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/morningbrew-transparent-logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="242.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="41.0" prefWidth="165.0" styleClass="login-button" stylesheets="@login.css" text="Login" textAlignment="CENTER" textFill="#fbf7f1">
+               <font>
+                  <Font name="Segoe UI Black" size="29.0" />
+               </font>
+            </Button>
+            <Label layoutX="240.0" layoutY="233.0" text="Password" textFill="#351e15">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="142.0" text="Username" textFill="#351e15">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" layoutX="559.0" layoutY="384.0" mnemonicParsing="false" onAction="#closeApp" prefHeight="38.0" prefWidth="50.0" styleClass="exit-button" stylesheets="@login.css">
+               <graphic>
+                  <FontIcon id="exit-button" iconColor="#431e1e" iconLiteral="mdi2c-coffee-to-go" iconSize="40" styleClass="exit-button" wrappingWidth="40.0" />
+               </graphic>
+            </Button>
+            <Label layoutX="573.0" layoutY="363.0" text="exit">
+               <font>
+                  <Font name="Segoe UI Black Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="showpass" layoutX="424.0" layoutY="277.0" mnemonicParsing="false" styleClass="showpass-button" stylesheets="@login.css">
+               <graphic>
+                  <FontIcon iconLiteral="mdi2e-eye-off" iconSize="18" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class DashboardController {
-    @FXML private Button btnHome, btnEmployeeManager;
+    @FXML private Button btnHome, btnEmployeeManager, btnlogin;
 
 
     @FXML
@@ -19,7 +19,7 @@ public class DashboardController {
         SceneHelper.switchScene("dashboard");
     }
     @FXML
-    private void switchToPayroll() {
+    private void switchTologin() {
         SceneHelper.switchScene("login");
     }
 }

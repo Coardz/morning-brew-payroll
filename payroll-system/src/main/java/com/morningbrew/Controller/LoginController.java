@@ -40,4 +40,26 @@ public class LoginController {
     private void closeApp() {
         System.exit(0);
     }
+
+
+    //please fix this if possible HAHAHA my show password shit hAHAHHA
+    @FXML
+    private void showpassword() {
+       if (passwordField.isVisible()) {
+
+
+            passwordField.setVisible(false);
+            passwordField.setManaged(false);
+
+        } else {
+
+            passwordField.setVisible(true);
+            passwordField.setManaged(true);
+        }
+       
+    }
+
+    
+     
+    
 }
