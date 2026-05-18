@@ -16,7 +16,7 @@
 #border {
 	-fx-border-color: #000000;
 	-fx-border-width: 4px;
-	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.503), 0px, 0, 7, 7px );
+	-fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.807), 0px, 0, 7, 7px );
 	-fx-effect-radius: 4px;
 	
 

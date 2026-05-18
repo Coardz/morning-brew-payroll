@@ -16,14 +16,18 @@
 .card {
     -fx-background-radius: 12px;
     -fx-background-color: #857062
+
+    
+
 }
 
 .side-bar {
-    -fx-background-color: #b4a48b;
+    -fx-background-color: #322c23;
     
 }
 
 .main {
     -fx-background-color: #ecdbc1;
 }
+
 
