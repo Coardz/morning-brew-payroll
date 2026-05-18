@@ -2,9 +2,14 @@
     -fx-background-color: #ecdbc1;
 }
 
+<<<<<<< HEAD
 .side-bar {
     -fx-background-color: #452f1f;
 }
+=======
+
+
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed
 
 
 .transparent-button {
@@ -26,4 +31,12 @@
     -fx-background-color: #ecdbc1;
 }
 
+<<<<<<< HEAD
 
+=======
+.button {
+    
+    -fx-background-color: #351e15;
+	-fx-background-radius: 8px;
+}
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed

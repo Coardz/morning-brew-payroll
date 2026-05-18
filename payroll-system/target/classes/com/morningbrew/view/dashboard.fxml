@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+=======
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,14 +17,18 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<<<<<<< HEAD
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
+=======
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="808.0" styleClass="main-background" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.morningbrew.Controller.DashboardController">
    <children>
+<<<<<<< HEAD
       <Pane prefHeight="560.0" prefWidth="52.0" styleClass="side-bar" stylesheets="@dashboard.css">
          <children>
             <VBox alignment="TOP_CENTER" layoutX="-6.0" layoutY="332.0" prefHeight="115.0" prefWidth="64.0" spacing="2.0">
@@ -54,9 +65,17 @@
                </children>
             </VBox>
          </children>
+=======
+      <Pane layoutX="191.0" prefHeight="560.0" prefWidth="619.0" stylesheets="@dashboard.css">
+         <styleClass>
+            <String fx:value="side-bar" />
+            <String fx:value="main" />
+         </styleClass>
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed
       </Pane>
       <StackPane layoutX="52.0" layoutY="-6.0" prefHeight="572.0" prefWidth="756.0">
          <children>
+<<<<<<< HEAD
             <GridPane hgap="10.0" prefHeight="464.0" prefWidth="590.0" vgap="10.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -181,6 +200,18 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </StackPane.margin>
             </GridPane>
+=======
+            <Button fx:id="payslipbutton" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Payslip" textFill="WHITE" />
+            <ImageView fitHeight="231.0" fitWidth="260.0" layoutX="-26.0" layoutY="14.0">
+               <image>
+                  <Image url="@../images/morningbrew-transparent-logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Hirebutton" layoutX="10.0" layoutY="371.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Resume / Hiring" textFill="WHITE" />
+            <Button fx:id="attendancebutton" layoutX="10.0" layoutY="416.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Attendance" textFill="WHITE" />
+            <Button fx:id="leavebutton" layoutX="10.0" layoutY="459.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Leave" textFill="WHITE" />
+            <Button fx:id="Home" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="172.0" text="Home" textFill="WHITE" />
+>>>>>>> e3a8b41513683ada5190423496f6758f85fe95ed
          </children>
       </StackPane>
    </children>
