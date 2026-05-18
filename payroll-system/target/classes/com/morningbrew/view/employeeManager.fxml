@@ -7,6 +7,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -90,9 +92,9 @@
                               <Insets />
                            </GridPane.margin>
                         </Group>
-                        <Label text="Employee">
+                        <Label text=" Employee">
                            <font>
-                              <Font name="Segoe UI Bold" size="29.0" />
+                              <Font name="Segoe UI Bold" size="47.0" />
                            </font>
                            <GridPane.margin>
                               <Insets />
@@ -148,7 +150,7 @@
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="lastNameField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="lastNameField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
@@ -162,7 +164,7 @@
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="firstNameField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="firstNameField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
@@ -176,7 +178,7 @@
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="positionField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="positionField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
@@ -190,7 +192,7 @@
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="deptField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="deptField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
@@ -204,7 +206,7 @@
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="rateField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="rateField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
@@ -213,18 +215,23 @@
                         </VBox>
                         <VBox layoutX="273.0" layoutY="164.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <children>
-                              <Label text="NO Days">
+                              <Label text="NO. Days">
                                  <font>
                                     <Font name="Segoe UI" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField fx:id="daysField" prefHeight="45.0" prefWidth="233.0">
+                              <TextField fx:id="daysField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
                                  <font>
                                     <Font name="Segoe UI" size="14.0" />
                                  </font>
                               </TextField>
                            </children>
                         </VBox>
+                        <ImageView fitHeight="51.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/coffee-beans.png" />
+                           </image>
+                        </ImageView>
                      </children>
                      <opaqueInsets>
                         <Insets />

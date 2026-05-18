@@ -3,20 +3,28 @@
 }
 
 .side-bar {
-    -fx-background-color: #2f2920;
+    -fx-background-color: #452f1f;
 }
 
 .label {
-    -fx-text-fill: #4b3832;
+    -fx-text-fill: #3d3431;
     -fx-font-family: "Segoe UI Semibold";
+}
+.standard-field {
+
+	-fx-background-radius: 12px;
+	-fx-effect: dropshadow( gaussian, rgba(30, 25, 13, 0.859), 0px, 0, 3, 3px );
+
 }
 
 
 .button {
-    -fx-background-color: #857062;
+    -fx-background-color: #77543d;
     -fx-text-fill: white;
-    -fx-background-radius: 6px;
+    -fx-background-radius: 10px;
     -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian, rgba(30, 25, 13, 0.859), 0px, 0, 2, 2px );
+
 }
 
 

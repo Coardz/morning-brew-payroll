@@ -3,8 +3,9 @@
 }
 
 .side-bar {
-    -fx-background-color: #b4a48b;
+    -fx-background-color: #452f1f;
 }
+
 
 .transparent-button {
     -fx-background-color: transparent;
@@ -19,11 +20,6 @@
 
     
 
-}
-
-.side-bar {
-    -fx-background-color: #322c23;
-    
 }
 
 .main {
