@@ -92,14 +92,6 @@
                               <Insets />
                            </GridPane.margin>
                         </Group>
-                        <Label text=" Employee">
-                           <font>
-                              <Font name="Segoe UI Bold" size="47.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets />
-                           </GridPane.margin>
-                        </Label>
                         <Group layoutX="2.0" layoutY="89.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Group layoutX="245.0" layoutY="89.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                         <Group layoutX="-8.0" layoutY="89.0" GridPane.rowIndex="2" />
@@ -107,12 +99,12 @@
                         <Group layoutX="245.0" layoutY="158.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                         <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleAddEmployee" prefHeight="49.0" prefWidth="235.0" text="Add" GridPane.rowIndex="3">
                            <font>
-                              <Font name="Segoe UI Bold" size="18.0" />
+                              <Font name="monogram Regular" size="33.0" />
                            </font>
                         </Button>
                         <Button fx:id="btnRemove" mnemonicParsing="false" onAction="#handleRemoveEmployee" prefHeight="49.0" prefWidth="235.0" text="Remove" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
-                              <Font name="Segoe UI Bold" size="18.0" />
+                              <Font name="monogram Regular" size="33.0" />
                            </font>
                         </Button>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
@@ -147,7 +139,7 @@
                            <children>
                               <Label text="Last Name">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="lastNameField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -161,7 +153,7 @@
                            <children>
                               <Label text="First Name">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="firstNameField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -175,7 +167,7 @@
                            <children>
                               <Label text="Position">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="positionField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -189,7 +181,7 @@
                            <children>
                               <Label text="Department">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="deptField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -203,7 +195,7 @@
                            <children>
                               <Label text="Daily Rate">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="rateField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -217,7 +209,7 @@
                            <children>
                               <Label text="NO. Days">
                                  <font>
-                                    <Font name="Segoe UI" size="18.0" />
+                                    <Font name="monogram Regular" size="30.0" />
                                  </font>
                               </Label>
                               <TextField fx:id="daysField" prefHeight="45.0" prefWidth="233.0" styleClass="standard-field">
@@ -227,11 +219,23 @@
                               </TextField>
                            </children>
                         </VBox>
-                        <ImageView fitHeight="51.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
-                           <image>
-                              <Image url="@../images/coffee-beans.png" />
-                           </image>
-                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="55.0" prefWidth="167.0" text="Manager">
+                                 <font>
+                                    <Font name="monogram Regular" size="61.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="63.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/coffee-beans.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
                      </children>
                      <opaqueInsets>
                         <Insets />

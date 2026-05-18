@@ -8,7 +8,6 @@
 
 .label {
     -fx-text-fill: #3d3431;
-    -fx-font-family: "Segoe UI Semibold";
 }
 .standard-field {
 
@@ -45,6 +44,8 @@
     -fx-border-color: #b4a48b;
     -fx-border-width: 1px;
     -fx-border-radius: 0px;
+    -fx-font-family: "monogram", "Segoe UI"; 
+    -fx-font-size: 18px;
 }
 
 #employeeTable .column-header-background {
